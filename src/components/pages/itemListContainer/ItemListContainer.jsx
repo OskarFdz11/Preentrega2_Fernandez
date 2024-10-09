@@ -1,9 +1,11 @@
-import { Saludo } from "../../common/saludo/Saludo";
+import Saludo from "../../common/saludo/Saludo";
 
-export const ItemListContainer = () => {
+const ItemListContainer = () => {
   return (
     <>
       <Saludo greetting={"Bienvenido a nuestro sitio web!"} />
     </>
   );
 };
+
+export default ItemListContainer;

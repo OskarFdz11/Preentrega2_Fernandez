@@ -1,6 +1,6 @@
 import Grid from "@mui/material/Grid2";
 
-export const Saludo = ({ greetting }) => {
+const Saludo = ({ greetting }) => {
   return (
     <>
       <Grid
@@ -15,3 +15,5 @@ export const Saludo = ({ greetting }) => {
     </>
   );
 };
+
+export default Saludo;
