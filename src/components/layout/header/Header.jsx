@@ -1,6 +1,7 @@
 import Grid from "@mui/material/Grid2";
 import CartWidget from "../../common/cartWidget/CartWidget";
 import SocialIcons from "../../common/socialIcons/SocialIcons";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -18,11 +19,13 @@ const Header = () => {
 
         {/* Logo */}
         <Grid item xs={5} md={6} sx={{ textAlign: "center" }}>
-          <img
-            src="https://res.cloudinary.com/dnbxhmpkd/image/upload/v1728405015/logo_horizontal_pi8iib.png"
-            alt="Logo"
-            style={{ height: "50px" }}
-          />
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <img
+              src="https://res.cloudinary.com/dnbxhmpkd/image/upload/v1728405015/logo_horizontal_pi8iib.png"
+              alt="Logo"
+              style={{ height: "50px" }}
+            />
+          </Link>
         </Grid>
 
         {/* Cart Widget */}
