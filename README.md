@@ -6,7 +6,7 @@ Wellfit E-commerce es una aplicación web de comercio electrónico diseñada par
 
 ## Tecnologías Utilizadas
 
-- **React**: Biblioteca de JavaScript para construir interfaces de usuario.
+- **React**: Librería de JavaScript para construir interfaces de usuario.
 - **Vite**: Herramienta de construcción rápida para proyectos de frontend.
 - **Firebase**: Plataforma de desarrollo de aplicaciones que proporciona una base de datos en tiempo real y servicios de autenticación.
 - **Material-UI**: Biblioteca de componentes de interfaz de usuario para React.
