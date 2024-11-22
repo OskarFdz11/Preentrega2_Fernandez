@@ -5,7 +5,7 @@ import { CartProvider } from "./contexts/CartContext";
 import HeaderWithNavbar from "./components/layout/header/HeaderWithNavbar";
 import CategoryPage from "./components/pages/categoryPage/CategoryPage";
 import ProductDetailPage from "./components/pages/productDetail/ProductDetail";
-import Checkout from "./components/pages/checkout/checkout";
+import Checkout from "./components/pages/checkout/Checkout";
 import Footer from "./components/layout/footer/Footer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/ReactToastify.css";
