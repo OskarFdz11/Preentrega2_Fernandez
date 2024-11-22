@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Wellfit E-commerce es una aplicación web de comercio electrónico diseñada para ofrecer una experiencia de compra fluida y agradable. Los usuarios pueden navegar por una variedad de productos, agregarlos al carrito, y realizar compras de manera segura.
+Wellfit E-commerce es una aplicación web de comercio electrónico diseñada para ofrecer una experiencia de compra fluida y agradable. Los usuarios pueden navegar por una variedad de productos, agregarlos al carrito, y realizar compras.
 
 ## Tecnologías Utilizadas
 
