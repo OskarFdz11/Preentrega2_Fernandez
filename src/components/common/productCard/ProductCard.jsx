@@ -6,8 +6,16 @@ import CardActionArea from "@mui/material/CardActionArea";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
+import { useCart } from "../../../contexts/CartContext";
 
 const ProductCard = ({ product }) => {
+  const { addToCart } = useCart();
+  const handleAddToCart = () => {
+    if (product.stock > 0) {
+      addToCart(product);
+    }
+  };
+
   return (
     <Card
       sx={{
@@ -52,7 +60,7 @@ const ProductCard = ({ product }) => {
         </CardContent>
       </CardActionArea>
       <CardActions sx={{ backgroundColor: "#B0D3A5" }}>
-        <Button size="small" color="#ECE5D1">
+        <Button onClick={handleAddToCart} size="small" color="#ECE5D1">
           Añadir al carrito
         </Button>
         <Button

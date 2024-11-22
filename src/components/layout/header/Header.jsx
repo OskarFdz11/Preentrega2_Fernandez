@@ -14,7 +14,7 @@ const Header = () => {
       >
         {/* Social Icons */}
         <Grid item xs={3} md={3}>
-          <SocialIcons sx={{ fontSize: "30px" }} />
+          <SocialIcons sx={{ fontSize: "30px", color: "#E4F0CD" }} />
         </Grid>
 
         {/* Logo */}

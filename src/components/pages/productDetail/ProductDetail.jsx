@@ -1,11 +1,32 @@
 import { useParams } from "react-router-dom";
-import { products } from "../../../products";
+import { useState, useEffect, useContext } from "react";
+import { useCart } from "../../../contexts/CartContext";
+import { db } from "../../../firebaseConfig";
+import { doc, getDoc } from "firebase/firestore";
 import { Box, Typography, Button, CardMedia } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 
 const ProductDetailPage = () => {
   const { id } = useParams();
-  const product = products.find((p) => p.id === id);
+  const { addToCart } = useCart();
+  const [product, setProduct] = useState(null);
+
+  useEffect(() => {
+    const fetchProduct = async () => {
+      const productRef = doc(db, "products", id);
+      const productSnap = await getDoc(productRef);
+      if (productSnap.exists()) {
+        setProduct({ id: productSnap.id, ...productSnap.data() });
+      }
+    };
+    fetchProduct();
+  }, [id]);
+
+  const handleAddToCart = () => {
+    if (product.stock > 0) {
+      addToCart(product);
+    }
+  };
 
   if (!product) {
     return <Typography variant="h6">Producto no encontrado</Typography>;
@@ -63,19 +84,23 @@ const ProductDetailPage = () => {
         </Grid>
 
         <Grid color={"#ECE5D1"} item xs={5}>
-          <Typography variant="overline" sx={{ color: "E4F0CD" }}>
+          <Typography variant="overline" sx={{ color: "#E4F0CD" }}>
             {product.category.toUpperCase()}
           </Typography>
           <Typography variant="h5" sx={{ fontWeight: "bold", mb: 1 }}>
             {product.title}
           </Typography>
-          <Typography variant="body2" sx={{ color: "E4F0CD", mb: 2 }}>
+          <Typography variant="body2" sx={{ color: "#E4F0CD", mb: 2 }}>
             {product.description}
           </Typography>
           <Typography variant="h6" sx={{ fontWeight: "bold", mb: 4 }}>
             ${product.price}
           </Typography>
+          <Typography variant="body2" sx={{ color: "#E4F0CD", mb: 2 }}>
+            Stock disponible: {product.stock}
+          </Typography>
           <Button
+            onClick={handleAddToCart}
             variant="contained"
             color="primary"
             size="large"

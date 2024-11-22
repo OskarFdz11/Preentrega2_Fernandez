@@ -1,7 +1,6 @@
 export const products = [
   // Ropa
   {
-    id: "1",
     title: "Camiseta Nike",
     price: 25,
     stock: 10,
@@ -11,7 +10,6 @@ export const products = [
     category: "ropa",
   },
   {
-    id: "2",
     title: "Pantalones Adidas",
     price: 35,
     stock: 8,
@@ -21,7 +19,6 @@ export const products = [
     category: "ropa",
   },
   {
-    id: "3",
     title: "Chaqueta Puma",
     price: 55,
     stock: 5,
@@ -31,7 +28,6 @@ export const products = [
     category: "ropa",
   },
   {
-    id: "5",
     title: "Sudadera Under Armour",
     price: 45,
     stock: 7,
@@ -44,7 +40,6 @@ export const products = [
 
   // Calzado Deportivo
   {
-    id: "6",
     title: "Nike Air Max",
     price: 120,
     stock: 15,
@@ -55,7 +50,6 @@ export const products = [
     category: "calzado-deportivo",
   },
   {
-    id: "7",
     title: "Adidas Ultraboost",
     price: 150,
     stock: 9,
@@ -66,7 +60,6 @@ export const products = [
     category: "calzado-deportivo",
   },
   {
-    id: "8",
     title: "Puma Ignite",
     price: 100,
     stock: 11,
@@ -76,7 +69,6 @@ export const products = [
     category: "calzado-deportivo",
   },
   {
-    id: "9",
     title: "Reebok Nano",
     price: 130,
     stock: 7,
@@ -89,7 +81,6 @@ export const products = [
 
   // Accesorios
   {
-    id: "11",
     title: "Gorra Nike",
     price: 15,
     stock: 20,
@@ -99,18 +90,8 @@ export const products = [
       "Gorra deportiva Nike para protegerte del sol durante el ejercicio.",
     category: "accesorios",
   },
+
   {
-    id: "12",
-    title: "Muñequeras Reebok",
-    price: 10,
-    stock: 25,
-    imageUrl:
-      "https://res.cloudinary.com/dnbxhmpkd/image/upload/v1728585969/Reebok_Wristbands_qi52vi.webp",
-    description: "Muñequeras absorbentes Reebok para un mejor agarre.",
-    category: "accesorios",
-  },
-  {
-    id: "13",
     title: "Cinturón de levantamiento Puma",
     price: 25,
     stock: 5,
@@ -121,7 +102,6 @@ export const products = [
     category: "accesorios",
   },
   {
-    id: "14",
     title: "Botella de agua Under Armour",
     price: 12,
     stock: 30,
@@ -133,7 +113,6 @@ export const products = [
 
   // Equipos de Entrenamiento
   {
-    id: "16",
     title: "Mancuernas ajustables Bowflex",
     price: 200,
     stock: 4,
@@ -143,7 +122,6 @@ export const products = [
     category: "equipos-de-entrenamiento",
   },
   {
-    id: "17",
     title: "Bicicleta estática Schwinn",
     price: 500,
     stock: 2,
@@ -153,7 +131,6 @@ export const products = [
     category: "equipos-de-entrenamiento",
   },
   {
-    id: "18",
     title: "Cuerda para saltar Everlast",
     price: 10,
     stock: 25,
@@ -164,7 +141,6 @@ export const products = [
     category: "equipos-de-entrenamiento",
   },
   {
-    id: "19",
     title: "Kettlebell 20kg",
     price: 75,
     stock: 10,
@@ -176,7 +152,6 @@ export const products = [
 
   // Suplementos
   {
-    id: "21",
     title: "Proteína Whey Gold Standard",
     price: 40,
     stock: 20,
@@ -187,7 +162,6 @@ export const products = [
     category: "suplementos",
   },
   {
-    id: "22",
     title: "Creatina Monohidrato",
     price: 25,
     stock: 30,
@@ -198,7 +172,6 @@ export const products = [
     category: "suplementos",
   },
   {
-    id: "23",
     title: "Aminoácidos BCAA",
     price: 30,
     stock: 25,
@@ -209,7 +182,6 @@ export const products = [
     category: "suplementos",
   },
   {
-    id: "24",
     title: "Pre-entrenamiento C4",
     price: 35,
     stock: 15,

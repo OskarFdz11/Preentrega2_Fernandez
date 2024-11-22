@@ -1,16 +1,28 @@
+import { useContext } from "react";
+import { useCart } from "../../../contexts/CartContext";
 import { IconButton, Badge, Box, Typography } from "@mui/material";
 import { ShoppingCart, AccountCircle } from "@mui/icons-material";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const CartWidget = () => {
+  const { cartItems } = useCart(); // Usa el contexto para obtener cartItems
+  const navigate = useNavigate();
+
+  // Calcula el número total de productos en el carrito
+  const totalItems = cartItems.reduce((acc, item) => acc + item.quantity, 0);
+
   return (
     <>
       <Box sx={{ display: "flex", alignItems: "center" }}>
         {/* Carrito */}
-        <Link to="/cart" style={{ color: "inherit" }}>
+        <Link
+          to="/cart"
+          onClick={() => navigate("/cart")}
+          style={{ color: "inherit" }}
+        >
           <IconButton color="inherit" sx={{ mx: 1 }}>
             <Badge
-              badgeContent={2}
+              badgeContent={totalItems}
               sx={{
                 "& .MuiBadge-badge": {
                   backgroundColor: "#E4F0CD",

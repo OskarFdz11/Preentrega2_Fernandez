@@ -3,24 +3,30 @@ import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import PinterestIcon from "@mui/icons-material/Pinterest";
+import PropTypes from "prop-types";
 
-const SocialIcons = () => {
+const SocialIcons = ({ color }) => {
+  const iconStyle = { color: color || "inherit" };
   return (
     <>
-      <IconButton>
-        <FacebookRoundedIcon sx={{ color: "#ECE5D1" }} />
+      <IconButton style={iconStyle}>
+        <FacebookRoundedIcon />
       </IconButton>
-      <IconButton>
-        <InstagramIcon sx={{ color: "#ECE5D1" }} />
+      <IconButton style={iconStyle}>
+        <InstagramIcon />
       </IconButton>
-      <IconButton>
-        <YouTubeIcon sx={{ color: "#ECE5D1" }} />
+      <IconButton style={iconStyle}>
+        <YouTubeIcon />
       </IconButton>
-      <IconButton>
-        <PinterestIcon sx={{ color: "#ECE5D1" }} />
+      <IconButton style={iconStyle}>
+        <PinterestIcon />
       </IconButton>
     </>
   );
+};
+
+SocialIcons.propTypes = {
+  color: PropTypes.string,
 };
 
 export default SocialIcons;

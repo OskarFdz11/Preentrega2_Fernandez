@@ -1,26 +1,42 @@
-# Proyecto React - E-commerce Navbar y Header
+# Wellfit E-commerce
 
-Este proyecto es una aplicación e-commerce construida con React, Vite, y Material UI. Implementa un `Navbar` para la navegación entre categorías de productos y un `Header` con íconos de redes sociales, un carrito de compras con contador, y un botón de login.
+## Descripción
 
-## Componentes principales
+Wellfit E-commerce es una aplicación web de comercio electrónico diseñada para ofrecer una experiencia de compra fluida y agradable. Los usuarios pueden navegar por una variedad de productos, agregarlos al carrito, y realizar compras de manera segura.
 
-### `Header`
-El componente `Header` contiene:
-- Íconos de redes sociales.
-- Un logo centrado.
-- Un ícono de carrito de compras con un contador que indica la cantidad de productos.
+## Tecnologías Utilizadas
 
-### `CartWidget`
-Este componente incluye:
-- Un ícono de carrito de compras con un contador personalizado.
-- Un ícono de login con el texto "Login" debajo, alineado verticalmente.
-- Espaciado ajustado entre los íconos para una mejor presentación.
+- **React**: Biblioteca de JavaScript para construir interfaces de usuario.
+- **Vite**: Herramienta de construcción rápida para proyectos de frontend.
+- **Firebase**: Plataforma de desarrollo de aplicaciones que proporciona una base de datos en tiempo real y servicios de autenticación.
+- **Material-UI**: Biblioteca de componentes de interfaz de usuario para React.
+- **React Router**: Biblioteca para el enrutamiento en aplicaciones de React.
+- **React Toastify**: Biblioteca para mostrar notificaciones en aplicaciones de React.
+- **Vercel**: Plataforma de despliegue para aplicaciones web.
 
-### `Navbar`
-- El componente `Navbar` genera dinámicamente las categorías de productos utilizando el método `map`.
-- Cada categoría se renderiza como un botón dentro de un sistema de cuadrícula (`Grid`) proporcionado por Material UI.
+## Funcionalidades Principales
 
-## Estilos y diseño
-- **Material UI Grid**: Se usa para la estructura y alineación.
-- **Colores**: Íconos en color `#ECE5D1` sobre un fondo oscuro (`#333831`).
-- **Espaciado**: Se ajustan los márgenes entre íconos para mantener uniformidad visual.
+### Navegación de Productos
+
+- Los usuarios pueden navegar por una lista de productos disponibles.
+- Cada producto tiene una página de detalles donde se muestra información adicional.
+
+### Carrito de Compras
+
+- Los usuarios pueden agregar productos al carrito desde la página de detalles del producto.
+- El carrito muestra una lista de productos agregados, junto con la cantidad y el precio total.
+- Los usuarios pueden actualizar la cantidad de productos en el carrito o eliminarlos.
+
+### Proceso de Pago
+
+- El proceso de pago está dividido en varios pasos: dirección de envío, detalles de pago y revisión del pedido.
+- Los usuarios deben completar todos los campos requeridos antes de avanzar al siguiente paso.
+- Se muestra un resumen del pedido antes de confirmar la compra.
+
+### Notificaciones
+
+- Se utilizan notificaciones de toast para informar a los usuarios sobre acciones importantes, como agregar productos al carrito o errores en el formulario.
+
+### Despliegue
+
+- La aplicación está desplegada en Vercel, lo que permite actualizaciones rápidas y fáciles.

@@ -19,7 +19,7 @@ const Footer = () => {
 
       {/* Íconos de Redes Sociales */}
       <Box>
-        <SocialIcons />
+        <SocialIcons style={{ color: "#2F3227" }} />
       </Box>
 
       {/* Texto Inferior */}
